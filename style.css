@@ -1,11 +1,27 @@
+/* Body */
+
 body {
-    background-color: #060707;
+    overflow: auto;
+    background-color: #E9E9E9;
     margin: 0;
     padding: 0;
 }
 
+p {
+    color: #718878;
+    font-size: large;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 250px;
+    color: #718878;
+    font-size: 30px;
+}
+/* Barra Superior */
+
 .barra-superior {
-    background-color: #0b0e0d;
+    background-color: #718878;
     color: white;
     display: flex;
     align-items: center;
@@ -24,4 +40,85 @@ body {
 .barra-superior h2 {
     margin: 0;
     padding: 20px 100px; 
+}
+
+/* Primeiro 'Card Esquerdo' */
+
+.cardOne {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+    background-color: #718878;
+    
+    border-width: 2px; /* Define a largura das bordas como 2 pixels */
+    border-style: groove; /* Define o estilo da borda como sólido (pode ser dashed, dotted, etc.) */
+    border-color: #718878; /* Define a cor da borda */
+    border-radius: 10px; /* Define o raio das bordas */
+
+}
+
+.cardOne img {
+    width: 450px;
+    border-radius: 2%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardOne p {
+    color: #E9E9E9;
+    text-align: center;
+}
+
+/* Segundo Card 'Card Central' */
+
+.cardTwo {
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin: 30px;
+    background-color: #718878;
+    border: 2px groove #718878;
+    border-radius: 10px;
+    text-align: center;
+    width: 450px;
+}
+
+.cardTwo img {
+    width: 100%;
+    border-radius: 2%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardTwo p {
+    color: #E9E9E9;
+    text-align: center;
+}
+
+/* Terceiro Card 'Card Direita' */
+
+.cardThree {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    background-color: #718878;
+    border: 2px groove #718878;
+    border-radius: 10px;
+    text-align: center;
+    width: 450px;
+}
+
+.cardThree img {
+    width: 100%;
+    border-radius: 2%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardThree p {
+    color: #E9E9E9;
+    text-align: center;
 }
