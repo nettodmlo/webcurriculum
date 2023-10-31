@@ -1,25 +1,31 @@
 /* Body */
-
 body {
     overflow: auto;
+    min-height: 350vh;
     background-color: #E9E9E9;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
-p {
-    color: #718878;
-    font-size: large;
+@font-face {
+    font-family: 'Fruits Delight';
+    src: url('font/Fruits Delight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+
+/* H3 Portfólio */
 
 h3 {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 3200px;
     color: #718878;
     font-size: 30px;
 }
-/* Barra Superior */
 
+/* Barra Superior */
 .barra-superior {
     background-color: #718878;
     color: white;
@@ -42,20 +48,65 @@ h3 {
     padding: 20px 100px; 
 }
 
-/* Primeiro 'Card Esquerdo' */
+/* Card About */
 
+.cardAbout {
+    position: absolute;
+    display: flex;
+    width: 70%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 50px;
+}
+
+.cardAbout .cardAboutImage {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+}
+
+.cardAbout .cardAboutImage img {
+    width: 100%;
+    border-radius: 2%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardAbout .cardAboutContent {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.cardAbout .cardAboutContent p {
+    color: #718878;
+    font-size: 28px;
+    font-family: 'Fruits Delight', sans-serif;
+    margin: 0;
+}
+
+/* Certificados */
+
+.containerCertificates {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    height: 250vh;
+}
+
+/* Primeiro 'Card Esquerdo' */
 .cardOne {
     position: absolute;
     bottom: 0;
     left: 0;
     margin: 30px;
     background-color: #718878;
-    
     border-width: 2px;
     border-style: groove;
     border-color: #718878;
     border-radius: 10px;
-
 }
 
 .cardOne img {
@@ -71,7 +122,6 @@ h3 {
 }
 
 /* Segundo Card 'Card Central' */
-
 .cardTwo {
     position: absolute;
     bottom: 0;
@@ -97,8 +147,12 @@ h3 {
     text-align: center;
 }
 
-/* Terceiro Card 'Card Direita' */
+.cardTwo h3 {
+    color: #718878;
+    text-align: center;
+}
 
+/* Terceiro Card 'Card Direita' */
 .cardThree {
     position: absolute;
     bottom: 0;
