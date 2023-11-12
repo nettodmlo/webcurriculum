@@ -1,7 +1,7 @@
 /* Body */
 body {
     overflow: auto;
-    min-height: 350vh;
+    min-height: 300vh;
     background-color: #E9E9E9;
     margin: 0;
     padding: 0;
@@ -15,14 +15,20 @@ body {
     font-style: normal;
 }
 
-
 /* H3 Portfólio */
-
 h3 {
     text-align: center;
-    margin-top: 3200px;
     color: #718878;
     font-size: 30px;
+}
+
+.section {
+    margin-top: 100vh;
+}
+
+.section-portfolio {
+    text-align: center;
+    margin-top: 50vh;
 }
 
 /* Barra Superior */
@@ -48,8 +54,24 @@ h3 {
     padding: 20px 100px; 
 }
 
-/* Card About */
+/* Barra Inferior */
 
+.barra-inferior {
+    background-color: #718878;
+    color: #E9E9E9;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.barra-inferior h4 {
+    margin: 4px; 
+}
+
+/* Card About */
 .cardAbout {
     position: absolute;
     display: flex;
@@ -87,92 +109,63 @@ h3 {
 }
 
 /* Certificados */
-
 .containerCertificates {
     display: flex;
-    position: relative;
     justify-content: space-between;
     text-align: center;
-    height: 250vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
 }
 
-/* Primeiro 'Card Esquerdo' */
-.cardOne {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 30px;
-    background-color: #718878;
-    border-width: 2px;
-    border-style: groove;
-    border-color: #718878;
-    border-radius: 10px;
-}
-
-.cardOne img {
-    width: 450px;
-    border-radius: 2%;
-    height: auto;
-    object-fit: cover;
-}
-
-.cardOne p {
-    color: #E9E9E9;
-    text-align: center;
-}
-
-/* Segundo Card 'Card Central' */
-.cardTwo {
-    position: absolute;
-    bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%); 
-    margin: 30px;
+.containerCertificates > div {
     background-color: #718878;
     border: 2px groove #718878;
     border-radius: 10px;
-    text-align: center;
+    height: 100%;
     width: 450px;
+    margin: 30px;
 }
 
-.cardTwo img {
+.containerCertificates img {
     width: 100%;
     border-radius: 2%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
-.cardTwo p {
+.containerCertificates p {
     color: #E9E9E9;
     text-align: center;
 }
 
-.cardTwo h3 {
-    color: #718878;
+/* Portfolios */
+
+.containerPortfolios {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: relative;
 }
 
-/* Terceiro Card 'Card Direita' */
-.cardThree {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 30px;
+.containerPortfolios > div {
     background-color: #718878;
     border: 2px groove #718878;
     border-radius: 10px;
-    text-align: center;
+    height: 100%;
     width: 450px;
+    margin: 30px;
 }
 
-.cardThree img {
+.containerPortfolios img {
     width: 100%;
     border-radius: 2%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
-.cardThree p {
+.containerPortfolios p {
     color: #E9E9E9;
-    text-align: center;
 }
